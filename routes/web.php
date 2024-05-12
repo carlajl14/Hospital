@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Mostrar todos los medicos
+Route::get('/medicos', [MedicosController::class, 'index'])->name('medicos.index');
